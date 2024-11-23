@@ -3,4 +3,4 @@
 ; Please edit this when you're creating a Roguefic. There is no set format.
 ; It's best to have at least a Title: and Author: field.
 Title: Generic Roguefic
-Author: Aura Riolu
+Author: Mr. Shatner
