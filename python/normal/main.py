@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import tcod
 import maps
-import entities
+import entity
 
 SCREEN_WIDTH, SCREEN_HEIGHT = 80, 24  # Console width and height in tiles.
 
@@ -12,14 +12,18 @@ QUIZ_STATE = 3
 MAP_STATE = 4
 
 def update(event: tcod.event.KeyboardEvent) -> None:
-    pass
+    for i in entities:
+        self.update()
 
 def draw() -> None:
     pass
 
+# Global variables
+state = START_STATE
+entities = []
+current_map = None
+
 def main() -> None:
-    # Initial setup
-    state = START_STATE
     # Load the font
     tileset = tcod.tileset.load_tilesheet(
         "ibmfont.png", 32, 8, tcod.tileset.CHARMAP_CP437,
