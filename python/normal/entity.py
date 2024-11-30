@@ -28,6 +28,13 @@ TODO:
     def __init__(self, sprite: str, proto: Prototype):
         super().init(self, self.sprite)
 
+    def move(x, y):
+        """
+Move by a vector.
+        """
+        self.x += x
+        self.y += y
+
 class Player(Being):
     """
 The player behaves differently from other beings.
@@ -51,13 +58,6 @@ The player behaves differently from other beings.
             event.scancode == tcod.event.Scancode.D and
             event.mod == tcod.event.Modifier.NONE):
             self.move(1, 0)
-
-    def move(x, y):
-        """
-Move by a vector.
-        """
-        self.x += x
-        self.y += y
 
 class Pickup(Entity):
     """
